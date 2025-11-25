@@ -33,6 +33,18 @@ Uses a local SQLite database (`students.db`) containing:
 * `students` table
 * `study_logs` table
 
+###How to Run the Project 
+1) Clone the repository.
+2) Install dependencies: pip install -r requirements.txt.
+3) Start the backend: uvicorn backend:app --reload.
+4) Backend runs at: http://localhost:8000.
+5) Swagger UI: http://localhost:8000/docs.
+6) In a new terminal, run Streamlit: streamlit run frontend.py.
+7) Frontend opens at: http://localhost:8501.
+8) Ensure students.db is in the same folder as backend and frontend.
+9) Use the Streamlit UI to log study data and view analytics.
+10) Recommendations are generated via the FastAPI /recommend/{student_id} endpoint
+
 ## Technologies Used
 * FastAPI
 * Streamlit
