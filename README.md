@@ -13,37 +13,20 @@ The notebook (`Study Habit Recommender.ipynb`) automatically:
 This allows the entire system to be executed without manually building a separate backend or frontend environment.
 
 ## Features
-
-### Backend (FastAPI)
-* Student Login & Signup
-* Add, Edit, Delete, and View Study Logs
-* Admin API for fetching all logs
-* ML-powered recommendation endpoint `/recommend/{student_id}`
-* Uses Pandas, NumPy, and Scikit-learn (KMeans + MinMaxScaler)
-* Automatic interactive API docs via Swagger UI
-
-### Frontend (Streamlit)
-* Login system with student/admin roles
-* Student dashboard
-* Add study logs
-* Graphs and analytics:
-  * Study hours vs time
-  * Study hours by subject
-  * Quiz score trends
-* AI recommendation page
-* Admin dashboard with:
-  * View all logs
-  * Edit/Delete logs
-  * Add students
-
-### Recommendation Engine
-The recommendation logic uses:
-* Subject-wise performance
-* Item-based collaborative filtering
-* Clustering using KMeans
-* Behavior metrics such as distraction time and consistency
-* Rule-based feedback generation
-* Random motivational messages
+* User Management: Students can sign up and log in, and an admin role can manage data.
+* Study Log: Students can record their daily study hours, subject, distraction time, method used, and quiz score.
+* Analysis & Clustering: The system uses K-Means clustering to identify behavior patterns.
+* Recommendation Engine:
+  * Suggests a subject to focus on (based on collaborative filtering)
+  * Picks the best study method
+  * Recommends tools (like YouTube or Quizlet)
+  * Provides motivational advice
+* Frontend: A Streamlit app that presents:
+  * Study logs in a table
+  * Visualizations (study hours over time, subject and score trends)
+  * Personalized recommendations
+  * Admin dashboard to edit or delete logs
+* Backend: FastAPI server handling API endpoints for authentication, study log operations, and recommendations
 
 ### Database
 Uses a local SQLite database (`students.db`) containing:
