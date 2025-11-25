@@ -1,5 +1,5 @@
 # Study-Habit-Recommender
-  This project is a full-stack Study Habit Recommendation System built directly inside a Jupyter Notebook. The notebook generates and runs a FastAPI backend, a Streamlit frontend, and a SQLite database. The system analyzes student study behavior and recommends personalized study habits using data analytics and machine learning.
+  This project is a full-stack Study Habit Recommendation System built directly inside a Jupyter Notebook. The notebook generates and runs a FastAPI backend, a Streamlit frontend, and a SQLite database. The system analyzes student study behavior and recommends personalized study habits using data analytics and ** unsupervised machine learning**.
 
 ## Overview
 The notebook (`Study Habit Recommender.ipynb`) automatically:
@@ -13,20 +13,20 @@ The notebook (`Study Habit Recommender.ipynb`) automatically:
 This allows the entire system to be executed without manually building a separate backend or frontend environment.
 
 ## Features
-* User Management: Students can sign up and log in, and an admin role can manage data.
-* Study Log: Students can record their daily study hours, subject, distraction time, method used, and quiz score.
-* Analysis & Clustering: The system uses K-Means clustering to identify behavior patterns.
-* Recommendation Engine:
+* **User Management:** Students can sign up and log in, and an admin role can manage data.
+* **Study Log:** Students can record their daily study hours, subject, distraction time, method used, and quiz score.
+* **Analysis & Clustering**: The system uses K-Means clustering to identify behavior patterns.
+* **Recommendation Engine:**
   * Suggests a subject to focus on (based on collaborative filtering)
   * Picks the best study method
   * Recommends tools (like YouTube or Quizlet)
   * Provides motivational advice
-* Frontend: A Streamlit app that presents:
+* **Frontend:** A Streamlit app that presents:
   * Study logs in a table
   * Visualizations (study hours over time, subject and score trends)
   * Personalized recommendations
   * Admin dashboard to edit or delete logs
-* Backend: FastAPI server handling API endpoints for authentication, study log operations, and recommendations
+* **Backend:** FastAPI server handling API endpoints for authentication, study log operations, and recommendations
 
 ### Database
 Uses a local SQLite database (`students.db`) containing:
