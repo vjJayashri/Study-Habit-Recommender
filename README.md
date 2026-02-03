@@ -1,5 +1,5 @@
 # Study-Habit-Recommender
-  This project is a full-stack Study Habit Recommendation System built directly inside a Jupyter Notebook. The notebook generates and runs a FastAPI backend, a Streamlit frontend, and a SQLite database. The system analyzes student study behavior and recommends personalized study habits using data analytics and ** unsupervised machine learning **.
+  This project is a full-stack Study Habit Recommendation System built directly inside a Jupyter Notebook. The notebook generates and runs a FastAPI backend, a Streamlit frontend, and a SQLite database. The system analyzes student study behavior and recommends personalized study habits using data analytics and unsupervised machine learning.
 
 ## Overview
 The notebook (`Study Habit Recommender.ipynb`) automatically:
